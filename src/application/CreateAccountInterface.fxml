@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="221.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" wrappingWidth="131.724609375">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="80.0" fitWidth="279.0" layoutX="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@7.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="20.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name : " />
+            <Text layoutX="22.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number : " />
+            <Text layoutX="15.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " />
+            <TextField fx:id="first_name" layoutX="121.0" layoutY="116.0" prefHeight="29.0" prefWidth="179.0" promptText="Enter First Name" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+            <TextField fx:id="mobile_no" layoutX="122.0" layoutY="221.0" prefHeight="25.0" prefWidth="177.0" promptText="03XX-XXXXXXX" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+            <TextField fx:id="password" layoutX="121.0" layoutY="324.0" prefHeight="25.0" prefWidth="179.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+            <ImageView fitHeight="155.0" fitWidth="280.0" layoutX="306.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@14.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="register" layoutX="178.0" layoutY="359.0" mnemonicParsing="false" onAction="#After_Registeration" prefHeight="27.0" prefWidth="66.0" text="Register !" textFill="#1e1d1d" />
+            <Text layoutX="20.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name : " />
+            <TextField fx:id="last_name" layoutX="121.0" layoutY="151.0" promptText="Enter Last Name" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+            <Text layoutX="21.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender : " />
+            <ChoiceBox fx:id="cb" layoutX="123.0" layoutY="186.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+            <Text layoutX="20.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC : " />
+            <TextField fx:id="cnic" layoutX="121.0" layoutY="257.0" promptText="3XXXX-XXXXXXX-X" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+            <Text layoutX="19.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : " />
+            <TextField fx:id="email" layoutX="121.0" layoutY="291.0" promptText="username@xyz.com" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 2px;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

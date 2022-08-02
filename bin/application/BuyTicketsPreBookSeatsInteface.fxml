@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller10">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="342.0" fitWidth="600.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@17.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="enter_booking_id" layoutX="26.0" layoutY="334.0" prefHeight="25.0" prefWidth="204.0" text="Enter the Booking ID : ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="enter_bank_name" layoutX="26.0" layoutY="241.0" text="Enter Bank Name : ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="enter_account_number" layoutX="26.0" layoutY="288.0" text="Enter Account Number : ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bank_name" layoutX="362.0" layoutY="239.0" promptText="Enter Bank Name" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="account_number" layoutX="362.0" layoutY="287.0" promptText="Enter Account Number" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="booking_id" layoutX="362.0" layoutY="333.0" promptText="Enter Booking ID" style="-fx-background-color: transparent; -fx-border-color: blue; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="confirm" layoutX="527.0" layoutY="360.0" mnemonicParsing="false" onAction="#Next" style="-fx-background-color: blue;" text="Confirm" textFill="WHITE" />
+            <Button fx:id="back" layoutX="26.0" layoutY="32.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: blue;" text="Back" textFill="WHITE" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

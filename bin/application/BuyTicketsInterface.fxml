@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller9">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="392.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@15.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="pre_book" layoutX="14.0" layoutY="78.0" mnemonicParsing="false" onAction="#After_Pre_Book" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: green;" text="Buy a Pre Booked Seat" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="instant_ticket" layoutX="14.0" layoutY="169.0" mnemonicParsing="false" onAction="#After_Instant_Ticket" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: green;" text="Buy an Instant Ticket" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: green;" text="Back" textFill="WHITE" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
